@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Max Perez-Mas Portfolio 2021</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: rgb(0, 138, 0);
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Maximilian Perez-Mas - 2021 Portfolio</h2>
+<p><strong>Email: perezmas@udel.edu</strong> <p>
+
+<header>
+  <h2>Pages</h2>
+  <p>Click buttons below to see my projects</p>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">About Me</a></li>
+      <li><a href="#">W.I.P.</a></li>
+      <li><a href="#">W.I.P.</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>About Me</h1>
+    <p>My name is Maximilian Perez-Mas</p>
+    <p>Major: Information Systems</p>
+    <p>Year: Class of 2023</p>
+    <img src="profpic.jpg" alt="Picture" style="width:300px;height:400px;">
+  </article>
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
+</html>
