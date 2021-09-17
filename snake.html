@@ -4,9 +4,83 @@
   <title>Snake Game</title>
   <meta charset="UTF-8">
   <style>
+  
+  * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: rgb(34, 34, 34);
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: rgb(187, 187, 187);
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #cecece;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: rgb(34, 34, 34);
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Style the background gradient */
+html {
+    min-height: 100%;
+    background:
+        radial-gradient(transparent, black),
+        url("http://lorempixel.com/500/500");
+    background-size: cover;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
   html, body {
     height: 100%;
     margin: 0;
+    padding: 10px;
   }
 
   body {
@@ -17,8 +91,10 @@
   }
   canvas {
     border: 1px solid white;
+    padding: 10px;
   }
-  </style>
+
+</style>
 </head>
 <body>
 <canvas width="400" height="400" id="game"></canvas>
