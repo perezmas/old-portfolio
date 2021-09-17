@@ -60,6 +60,15 @@ footer {
   color: white;
 }
 
+/* Style the background gradient */
+html {
+    min-height: 100%;
+    background:
+        radial-gradient(transparent, black),
+        url("http://lorempixel.com/500/500");
+    background-size: cover;
+}
+
 /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
 @media (max-width: 600px) {
   section {
@@ -80,8 +89,9 @@ footer {
   <nav>
     <ul>
       <li><a href="#">About Me</a></li>
-      <li><p><a href="https://github.com/perezmas/perezmas.github.io">Source Repo</a></p></li>
+      <li><p><a href="https://perezmas.github.io/photography.html">My Photography</a></p></li>
       <li><p><a href="https://perezmas.github.io/snake.html">Snake Game</a></p></li>
+      <li><p><a href="https://github.com/perezmas/perezmas.github.io">Source Repo</a></p></li>
     </ul>
   </nav>
   
@@ -91,32 +101,28 @@ footer {
     <p>Major: Information Systems</p>
     <p>Year: Class of 2023</p>
     <p>Hometown: Philadelphia, PA</p>
-    <img src="https://raw.githubusercontent.com/perezmas/perezmas.github.io/main/profpic.JPG" alt="Picture" style="width:300px;height:400px;">
+    <img src="profpic.jpg" alt="Picture" style="width:300px;height:400px;">
   </article>
 </section>
 
 <section>
   <article>
     <h1>Change Log:</h1>
-    <p>~added HTML layout</p>
+    <p>~added clickable links</p>
     <p>~link to the inspiration: </p>
-    <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_layout_flexbox" target="_blank">W3Schools</a>
-    <p>~incorporated CSS background & font colors</p>
-    <p>~followed a snake game tutorial and figured out how it worked with loops</p>
-    <p>~link to the original: </p>
-    <a href="https://gist.github.com/straker/ff00b4b49669ad3dec890306d348adc4#file-snake-html" target="_blank">Original Snake Game</a>
-    <p>~learned about how to incorporate flexboxes (flexible box layout css module)</p>
-    <p>~spent 4 hours learning and practicing working with react</p>
-    <p>~learned how to display images on the site (about me picture)</p>
+    <a href="https://www.w3schools.com/html/html_links.asp" target="_blank">W3Schools</a>
+    <p>~improved overall layout and navigation</p> 
+    <p>~learned how to link back and forth (home page to other pages and back)</p>
+    <p>~learned about box shadows and gradients</p>
+    <p>~link to the inspiration: </p>
+    <a href="https://una.im/vignettes/" target="_blank">CSS for Web Vitals</a>
   </article>
 
   <article>
     <h1>To-Do:</h1>
-    <p>*Improve overall layout and navigation</p>
-    <p>*Incorporate more CSS styling</p>
-    <p>*Include Photography page</p>
-    <p>*Add clickable links</p>
-    <p>*Add React App</p>
+    <p>*create a search bar/auto complete function for the site</p>
+    <p>*add a simple calculator</p>
+    <p>*look into adding other media (video/music files)</p>
   </article>
 </section>
 
