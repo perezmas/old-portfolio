@@ -1,128 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Max Perez-Mas Portfolio 2021</title>
+<title>Max Perez-Mas - Portfolio 2021</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style/main.css">
 <style>
-* {
-  box-sizing: border-box;
-}
 
-body {
-  font-family: Arial, Helvetica, sans-serif, 'Times New Roman';
-  color: black;
-  text-align: center;
-  font-family: 'Times New Roman';
-}
-
-/* Style the header */
-header {
-  background-color: rgb(34, 34, 34);
-  padding: 30px;
-  text-align: center;
-  font-size: 35px;
-  color: white;
-}
-
-/* Container for flexboxes */
-section {
-  display: -webkit-flex;
-  display: flex;
-}
-
-/* Style the navigation menu */
-nav {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  background: rgb(187, 187, 187);
-  padding: 20px;
-  font-weight: bold;
-}
-
-/* Style the list inside the menu */
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-/* Style the content */
-article {
-  -webkit-flex: 3;
-  -ms-flex: 3;
-  flex: 3;
-  background-color: #cecece;
-  padding: 10px;
-}
-
-/* Style the footer */
-footer {
-  background-color: rgb(34, 34, 34);
-  padding: 10px;
-  text-align: center;
-  color: white;
-}
-
-/* Style the background gradient */
-html {
-    min-height: 100%;
-    background:
-        radial-gradient(transparent, black);
-    color:rgb(187, 187, 187);
-    background-size: cover;
-}
-
-/* Style the button used to open and close the collapsible change logs/to-do's*/
-.collapsible{
-  background-color: rgb(68, 68, 68);
-  color: rgb(224, 223, 223);
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-}
-
-/* Add background color to button if clicked on (add .active class w/ JS), and when you move the mouse over it (hover)
-as well as making text white in box */
-.active, .collapsible:hover {
-  background-color: rgb(51, 51, 51);
-  color: white;
-}
-
-/* Adding symbol to indicate maximize (plus sign) and minimize (-) */
-.collapsible:after {
-  content: '\002B'; /* Unicode character for "plus" sign (+) */
-  font-size: 13px;
-  color: white;
-  float: right;
-  margin-left: 5px;
-}
-
-.active:after{
-  content: "\2212"; /* Unicode character for "minus" sign (-) */
-}
-
-/* Style the collapsible content. Note: hidden by default */
-.content {
-  padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
-  color: black;
-}
-
-/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
-@media (max-width: 600px) {
-  section {
-    -webkit-flex-direction: column;
-    flex-direction: column;
-  }
-}
 </style>
 </head>
 <body>
@@ -131,18 +15,13 @@ as well as making text white in box */
   <h2>Maximilian Perez-Mas</h2>
   <p><strong>2021 Portfolio</strong></p>
 </header>
+<div class="topnav">
+  <button onclick="window.location.href= 'https://perezmas.github.io/index.html'; " type="button" class="navbutton">Home</button>
+  <button onclick="window.location.href= 'https://perezmas.github.io/software.html'; " type="button" class="navbutton">Software</button>
+</div>
 
 <section>
-  <nav>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><p><br>Current Projects</p></li>
-      <li><p><a href="https://perezmas.github.io/photography.html">My Photography</a></p></li>
-      <li><p><a href="https://perezmas.github.io/react-tictactoe/">Tic Tac Toe (React)</a></p></li>
-      <li><p><a href="https://perezmas.github.io/snake.html">Snake Game</a></p></li>
-      <li><p><a href="https://github.com/perezmas/perezmas.github.io">Source Repo</a></p></li>
-    </ul>
-  </nav>
+
   
   <article>
     <h1><br>About Me</h1>
@@ -157,85 +36,21 @@ as well as making text white in box */
   </article>
 </section>
 
-<section>
-  <article>
-    <h1>Weekly Updates</h1>
-    <button type="button" class="collapsible">Change Log: September 9th, 2021</button>
-    <div class="content">
-      <p>
-        ~added HTML layout<br>
-        ~link to the inspiration:<a href="https://www.w3schools.com/html/.asp" target="_blank">W3Schools</a><br>
-        ~incorporated CSS background & font colors<br>
-        ~followed a snake game tutorial and figured out how it worked with loops<br>
-        ~link to the original: <a href="https://gist.github.com/straker/ff00b4b49669ad3dec890306d348adc4#file-snake-html" target="_blank">Snake Game</a><br>
-        ~learned about how to incorporate flexboxes (fexible box layout css module)<br>
-        ~spent 4 hours learning and practicing working with react<br>
-        ~learned how to display images on the site (about me picture)<br>
-      </p>
-    </div>
-
-    <button type="button" class="collapsible">Change Log: September 17th, 2021</button>
-    <div class="content">
-      <p>
-        ~added clickable links<br>
-        ~link to the inspiration:<a href="https://www.w3schools.com/html/html_links.asp" target="_blank">W3Schools</a><br>
-        ~improved overall layout and navigation<br>
-        ~learned how to link back and forth (home page to other pages and back)<br>
-        ~learned about box shadows and gradients<br>
-        ~link to the inspiration: <a href="https://una.im/vignettes/" target="_blank">CSS for Web Vitals</a><br>
-      </p>
-    </div>
-
-    <button type="button" class="collapsible">Change Log: September 24th, 2021</button>
-    <div class="content">
-      <p>
-        ~Added React application (Tic Tac Toe game)<br>
-        ~Link to the inspiration:<a href="https://www.w3schools.com/html/html_links.asp" target="_blank">W3Schools</a><br>
-        ~Improved overall site organization<br>
-        ~Followed a basic JavaScript tutorial and learned Separation of Concerns, or separating HTML, CSS, and JavaScript into their own files rather than in one big file<br>
-        ~Link to the tutorial: <a href="https://www.youtube.com/watch?v=W6NZfCO5SIk" target="_blank">JavaScript Tutorial for Beginners: Learn JavaScript in 1 Hour</a><br>
-        ~Learned how to create animated collapsibles using HTML, CSS, and JavaScript in order to separate my Change Log and To-Do by weeks<br>
-        ~Link to the walkthrough: <a href="https://www.w3schools.com/howto/howto_js_collapsible.asp" target="_blank">W3Schools</a><br>
-      </p>
-    </div>
-  </article>
-
-  <article>
-    <h1>Upcoming Tasks to Work On</h1>
-    <button type="button" class="collapsible">To-Do: September 24th, 2021</button>
-    <div class="content">
-      <p>
-        *Improve overall layout and navigation <br>
-        *Incorporate more CSS styling <br>
-        *Include Photography page <br>
-              </p>
-    </div>
-
-    <button type="button" class="collapsible">To-Do: September 17th, 2021</button>
-    <div class="content">
-      <p>
-        *Add clickable links <br>
-        *Add React app <br>
-        *create a search bar/auto complete function for the site <br>
-        *add a simple calculator <br>
-        *look into adding other media (video/music files) <br>
-              </p>
-    </div>
-
-    <button type="button" class="collapsible">To-Do: September 24th, 2021</button>
-    <div class="content">
-      <p>
-        * Add a functioning calculator with basic arithmetic functions.<br>
-        * With more time, I want to create a search bar/auto-complete function for the site similar to the one found on Google.<br>
-        * Add more animations to improve the look of the site overall.<br>
-        * Add other media (video/music files) as clickable files.<br>
-              </p>
-    </div>
-  </article>
-</section>
 
 <footer>
-  <p></p>
+  <p>
+
+  </p>
+  <div class = "icons">
+    <a href="https://github.com/perezmas/">Github</a> 
+    <span> | </span>
+    <a href="https://www.linkedin.com/in/maximilian-perez-mas/">LinkedIn</a>
+    <span> | </span>
+    <a href="https://github.com/perezmas/perezmas.github.io">Source Repo</a>
+  </div>
+  <p>
+    
+  </p>
 </footer>
 
 <script src="index.js"></script>
