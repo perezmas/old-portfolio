@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif, 'Times New Roman';
+    color: black;
+    text-align: center;
+    font-family: 'Times New Roman';
+  }
+  
+  /* Style the header */
+  header {
+    background-color: rgb(20, 20, 20);
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+  }
+
+  /* Style the subpage header */
+  .subheader {
+    background-color: rgb(20,20,20);
+    padding: 20px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    
+  }
+
+  /* Style the top navigation menu */
+  .sidenav {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background: rgba(161, 161, 161, 0.589);
+    padding: 20px;
+    font-weight: bold;
+  }
+  
+  /* Container for flexboxes */
+  section {
+    display: -webkit-flex;
+    display: flex;
+  }
+  /* Style the top navigation menu */
+  .topnav {
+    background-color: rgb(20,20,20);
+    padding: 20px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+  }
+
+  /* Style the navigation menu */
+  nav {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background: rgb(189, 189, 189);
+    padding: 10px;
+    font-weight: bold;
+  }
+
+  
+  /* Style the list inside the menu */
+  nav ul a{
+    list-style-type: none;
+    padding: 0;
+    color: black;
+    text-align: left;
+  }
+  
+  /* Style the content */
+  article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    background-color: #cecece;
+    padding: 10px;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: rgb(34, 34, 34);
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Style the background gradient */
+  html {
+      min-height: 100%;
+      background:
+          radial-gradient(transparent, black);
+      color:rgb(187, 187, 187);
+      background-size: cover;
+  }
+
+  /* Style the sidebar navigation button used to get to the other pages*/
+  .navbutton{
+    background-color: rgb(189,189,189);
+    color: rgb(20, 20, 20);
+    cursor: pointer;
+    padding: 20px;
+    width: 120px;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    flex: none;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  /* Style the button used to open and close the collapsible change logs/to-do's*/
+  .collapsible{
+    background-color: rgb(68, 68, 68);
+    color: rgb(224, 223, 223);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  /* Add background color to button if clicked on (add .active class w/ JS), and when you move the mouse over it (hover)
+  as well as making text white in box */
+  .active, .collapsible:hover, .navbutton:hover {
+    background-color: rgb(48, 47, 47);
+    color: white;
+  }
+  
+  /* Adding symbol to indicate maximize (plus sign) and minimize (-) */
+  .collapsible:after {
+    content: '\002B'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after{
+    content: "\2212"; /* Unicode character for "minus" sign (-) */
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+    color: black;
+  }
+  
+  /* Style icons for Github and LinkedIn */
+  .icons a{
+    padding: 10px;
+    font-family: 'Times New Roman';
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    
+  }
+
+  /* Create the image carousel */
+.carousel {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    section {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+  }
